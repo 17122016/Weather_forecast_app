@@ -1,8 +1,6 @@
 import { useState } from 'react';
-
 import SearchBox from "./SearchBox";
 import InfoBox from "./InfoBox";
-
 
 export default function Weather(){
     const [weatherInfo , setWeatherInfo] = useState({
@@ -25,7 +23,5 @@ export default function Weather(){
             <SearchBox updateInfo={updateInfo}/>
             <InfoBox info={weatherInfo}/>
         </div>
-    )
-        
-
+    );
 }
